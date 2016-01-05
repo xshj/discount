@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_header">#004D93</color>
+    <color name="bg_header_focus">#003B93</color>
+    <color name="tab_content_bg_color">#ffffffff</color>
+    <color name="list_item_click_color">#d6d6d6</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="orange_bg_home_header">#004D93</color>
+    <color name="line_color">#D6D4D5</color>
+    <!--white -->
+    <color name="write">#ffffff</color>
+    <color name="button_login">#ffffff</color>
+    <color name="white_bg_home">#eeeeee</color>
+    
+      <!--green -->
+    <color name="color_green">#034C91</color>
+    <color name="color_dark_green">#003B93</color>
+    <color name="color_light_green">#01A2D9</color>
+    <color name="color_light_focus_green">#0083D8</color>
+    
+    
+    <!--gray  主大字体的颜色-->
+    <color name="color_gray">#4C4C4C</color>
+    <color name="color_light_gray">#DADAD9</color>
+    <!--gray  小字体的颜色-->
+    <color name="color_small_gray">#969596</color>
+    <color name="color_small_gray2">#bfbfbf</color>
+    <!--red -->
+    <color name="color_red">#FC3237</color>
+    <color name="color_light_red">#c81414</color>
+    <color name="color_light_focus_red">#FC3237</color>
+    <!-- orange -->
+    <color name="color_orange">#FE7902</color>
+    <!-- blue -->
+    <color name="color_light_blue">#004d92</color>
+    <color name="color_light_focus_blue">#003399</color>
+    <!--focus dark orange -->
+    <color name="color_dark_orange">#FF6A03</color>
+    <!-- tab color -->
+    <color name="tab_focus_bg_color">#FFFFFF</color>
+    <color name="tab_normal_bg_color">#0276B1</color>
+    
+    <color name="refresh_head_bg">#2B2B2B</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+    
+    <color name="sb1">#60b568</color>
+    <color name="sb2">#00a5de</color>
+</resources>

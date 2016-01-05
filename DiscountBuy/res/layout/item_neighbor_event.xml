@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="5dp" >
+ 	<View
+      android:id="@+id/line"
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_alignParentTop="true"
+      android:background="@color/color_small_gray2" />
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/product_frame"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_pro"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="万达和瓦路店"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_most" />
+
+     <TextView
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="人数：10人"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_min" />
+     <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numbers"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="活动时间："
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_min" />
+	<TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_time"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="发布时间："
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_min" />
+	 <TextView
+        android:id="@+id/pageviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:text="浏览人数：10 点赞人数：xx 评论数：xx"
+        android:textColor="@color/color_small_gray"
+        android:textSize="@dimen/app_text_size_min" />
+</RelativeLayout>

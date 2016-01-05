@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="5dp" >
+ 	<View
+      android:id="@+id/line"
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_alignParentTop="true"
+      android:background="@color/color_small_gray2" />
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="5dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/product_frame"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_pro"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="万达和瓦路店"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_second" />
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/approved"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:drawableLeft="@drawable/dizhi"
+        android:text="合肥市和瓦路店双岗派出所"
+        android:textColor="@color/color_small_gray"
+        android:textSize="@dimen/app_text_size_min" />
+     <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="起送价：20.00｜配送费：2.00｜营业中"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_min" />
+     <TextView
+        android:id="@+id/huodong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="活动：买2送1"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_min" />
+      <TextView
+        android:id="@+id/baopin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/huodong"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="爆品：稀饭绿豆粥"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/app_text_size_min" />
+
+</RelativeLayout>

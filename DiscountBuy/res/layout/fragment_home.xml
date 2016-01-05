@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_small_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_common_home" />
+
+    <include
+        android:id="@+id/main_progressBar"
+        android:layout_width="wrap_content"
+        layout="@layout/refresh_head_view"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/home_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <com.bearstudio.discountbuy.util.view.ImageCycleView
+                android:id="@+id/ad_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_lineone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ad_view"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/btn_one_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="社区配送" />
+
+                <Button
+                    android:id="@+id/btn_one_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="旧物回收" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/ll_lineone"
+                android:background="@color/color_small_gray2" />
+
+            <LinearLayout
+                android:id="@+id/ll_linetwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v1"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/btn_two_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="小区话题" />
+
+                <LinearLayout
+                    android:id="@+id/ll_linetwo_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_two_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/home_lineone_1"
+                        android:text="物业公告" />
+
+                    <Button
+                        android:id="@+id/btn_two_buttom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/home_lineone_1"
+                        android:text="小区活动" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_linetwo"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/btn_three_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="搜商家" />
+
+                <Button
+                    android:id="@+id/btn_three_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="搜商品" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/ll_linethree"
+                android:background="@color/color_small_gray2" />
+
+            <LinearLayout
+                android:id="@+id/ll_linefour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v2"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <Button
+                    android:id="@+id/btn_four_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="商超便利" />
+
+                <Button
+                    android:id="@+id/btn_four_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="旧物回收" />
+
+                <Button
+                    android:id="@+id/btn_four_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="早餐配送" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_linefive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_linefour"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <Button
+                    android:id="@+id/btn_four_lift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="医疗旅行" />
+
+                <Button
+                    android:id="@+id/btn_four_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="我的小区" />
+
+                <Button
+                    android:id="@+id/btn_four_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_lineone_1"
+                    android:text="更多" />
+            </LinearLayout>
+            <View
+                android:id="@+id/v3"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/ll_linefive"
+                android:background="@color/color_small_gray2" />
+            
+            <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/lv_header"
+				android:layout_below="@id/v3"
+				android:padding="6dp" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:text="@string/recomment_seller_title"
+					android:textColor="@color/color_dark_green"
+					android:textSize="@dimen/app_text_size_first" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:drawablePadding="6dp"
+					android:id="@+id/hot_seller_enter"
+					android:drawableRight="@drawable/ic_arrow_right"
+					android:text="@string/more_enter_title"
+					android:textColor="@color/color_gray"
+					android:textSize="@dimen/app_text_size_first" />
+			</RelativeLayout>
+			
+             <com.bearstudio.discountbuy.util.view.ListViewForScrollView
+			 	android:id="@+id/hot_seller_listview"
+			 	android:layout_width="match_parent"
+			 	android:layout_below="@id/lv_header"
+			 	android:scrollbars="none"
+			 	android:background="@color/write"
+			 	android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+			 	android:listSelector="@drawable/listview_item_click_select"
+                android:divider="@null"
+			 	/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
